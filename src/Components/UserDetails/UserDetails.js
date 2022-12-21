@@ -1,9 +1,10 @@
+import { FloatingLabel, Form } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Loading from "../Loading/Loading";
+import "./UserDetails.css";
 
 function UserDetails({ activeUser, userDetails, isLoading }) {
   const activeUserCard = userDetails.filter((user) => user.id === activeUser);
-  console.log(activeUserCard[0]);
 
   if (isLoading) {
     return <Loading></Loading>;
@@ -16,28 +17,47 @@ function UserDetails({ activeUser, userDetails, isLoading }) {
         {activeUserCard.map((activeUser) => (
           <div key={activeUser.id}>
             <img src="" alt="" />
-            <p>{activeUser.profile.username}</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              consectetur eaque voluptatum amet repudiandae corrupti labore
-              natus accusantium officiis eligendi pariatur, minus, totam sint
-              asperiores dolor culpa beatae ab dicta.
-            </p>
-            <label htmlFor="">
-              <input type="text" defaultValue="Mezanur" className="w-100" />
-            </label>
-            <br />
-            <label htmlFor="">
-              <input type="text" defaultValue="Rahman" className="w-100" />
-            </label>
-            <br />
-            <label htmlFor="">
-              <input
-                type="email"
-                defaultValue="mezan2002@gmail.com"
-                className="w-100"
+            <p className="userName">@{activeUser.profile.username}</p>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Control
+                as="textarea"
+                rows={3}
+                defaultValue={activeUser.Bio}
               />
-            </label>
+            </Form.Group>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Full Name"
+              className="mb-3"
+            >
+              <Form.Control
+                type="text"
+                placeholder="Full Name"
+                defaultValue={
+                  activeUser.profile.firstName +
+                  " " +
+                  activeUser.profile.lastName
+                }
+              />
+            </FloatingLabel>
+            <FloatingLabel controlId="floatingPassword" label="Job Title">
+              <Form.Control
+                type="text"
+                placeholder="Job Title"
+                className="mb-3"
+                defaultValue={activeUser.jobTitle}
+              />
+            </FloatingLabel>
+            <FloatingLabel controlId="floatingPassword" label="Email">
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                defaultValue={activeUser.profile.email}
+              />
+            </FloatingLabel>
           </div>
         ))}
       </Card.Body>

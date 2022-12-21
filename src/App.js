@@ -6,7 +6,6 @@ import UsersList from "./Components/UsersList/UsersList";
 
 function App() {
   const [activeUser, setActiveUser] = useState("1");
-  console.log(activeUser);
   const { data: userDetails, isLoading } = useQuery({
     queryKey: ["userDetails"],
     queryFn: async () => {
