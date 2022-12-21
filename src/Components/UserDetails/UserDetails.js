@@ -31,12 +31,14 @@ function UserDetails({ activeUser, userDetails, isLoading }) {
                 as="textarea"
                 rows={3}
                 defaultValue={activeUser.Bio}
+                disabled
+                className="mb-5"
               />
             </Form.Group>
             <FloatingLabel
               controlId="floatingInput"
               label="Full Name"
-              className="mb-3"
+              className="mb-3 "
             >
               <Form.Control
                 type="text"
@@ -46,21 +48,34 @@ function UserDetails({ activeUser, userDetails, isLoading }) {
                   " " +
                   activeUser.profile.lastName
                 }
+                disabled
+                className=""
               />
             </FloatingLabel>
-            <FloatingLabel controlId="floatingPassword" label="Job Title">
+            <FloatingLabel
+              className=""
+              controlId="floatingPassword"
+              label="Job Title"
+            >
               <Form.Control
                 type="text"
                 placeholder="Job Title"
-                className="mb-3"
+                className="mb-3 "
                 defaultValue={activeUser.jobTitle}
+                disabled
               />
             </FloatingLabel>
-            <FloatingLabel controlId="floatingPassword" label="Email">
+            <FloatingLabel
+              controlId="floatingPassword"
+              label="Email"
+              className=""
+            >
               <Form.Control
                 type="email"
                 placeholder="Email"
+                className=""
                 defaultValue={activeUser.profile.email}
+                disabled
               />
             </FloatingLabel>
           </div>

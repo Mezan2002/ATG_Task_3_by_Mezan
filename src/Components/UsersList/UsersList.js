@@ -25,9 +25,9 @@ function UsersList({ setActiveUser }) {
           <div
             onClick={() => setActiveUser(user.id)}
             key={user.id}
-            className="py-3 rounded-2 mb-2 usersListContainer"
+            className="rounded-2 mb-2 usersListContainer"
           >
-            <div className="d-flex align-items-center usersList">
+            <div className="d-flex align-items-center usersList py-3">
               <div
                 className={`usersIcon rounded-circle ms-3 d-flex align-items-center 
                 justify-content-center ${user.avatarBG}`}
