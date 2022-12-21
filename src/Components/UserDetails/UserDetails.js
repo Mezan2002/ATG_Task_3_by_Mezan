@@ -16,8 +16,13 @@ function UserDetails({ activeUser, userDetails, isLoading }) {
       <Card.Body>
         {activeUserCard.map((activeUser) => (
           <div key={activeUser.id}>
-            <img src="" alt="" />
-            <p className="userName">@{activeUser.profile.username}</p>
+            <div
+              className={`usersDetailsIcon rounded-circle d-flex align-items-center 
+              justify-content-center ${activeUser.avatarBG}`}
+            >
+              <img src={activeUser.avatar} alt="" className="detailsAvatar" />
+            </div>
+            <p className="userName mt-2 mb-5">@{activeUser.profile.username}</p>
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"

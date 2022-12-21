@@ -27,9 +27,16 @@ function UsersList({ setActiveUser }) {
             key={user.id}
             className="py-3 rounded-2 mb-2 usersListContainer"
           >
-            <div className="d-flex usersList">
-              <img src={user.avatar} alt="" className="ms-3" />
-              <h5 className="ms-3">{user.firstName + " " + user.lastName}</h5>
+            <div className="d-flex align-items-center usersList">
+              <div
+                className={`usersIcon rounded-circle ms-3 d-flex align-items-center 
+                justify-content-center ${user.avatarBG}`}
+              >
+                <img src={user.avatar} alt="" className="w-50 avatar" />
+              </div>
+              <p className="ms-3 mb-0 listOfUserName">
+                {user.firstName + " " + user.lastName}
+              </p>
             </div>
           </div>
         ))}

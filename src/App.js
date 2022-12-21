@@ -16,7 +16,7 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div className="App my-3">
       <div className="container">
         <div className="row">
           <div className="col-md-6">

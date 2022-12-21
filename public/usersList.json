@@ -3,60 +3,70 @@
     "id": "1",
     "firstName": "Marilyne",
     "lastName": "Ruecker",
-    "avatar": "https://cdn.fakercloud.com/avatars/laasli_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user1"
   },
   {
     "id": "2",
     "firstName": "Hans",
     "lastName": "Connelly",
-    "avatar": "https://cdn.fakercloud.com/avatars/dgclegg_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user2"
   },
   {
     "id": "3",
     "firstName": "Filomena",
     "lastName": "Farrell",
-    "avatar": "https://cdn.fakercloud.com/avatars/d00maz_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user3"
   },
   {
     "id": "4",
     "firstName": "Ubaldo",
     "lastName": "Waelchi",
-    "avatar": "https://cdn.fakercloud.com/avatars/chatyrko_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user4"
   },
   {
     "id": "5",
     "firstName": "Marlon",
     "lastName": "Mitchell",
-    "avatar": "https://cdn.fakercloud.com/avatars/kurtinc_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user5"
   },
   {
     "id": "6",
     "firstName": "Carroll",
     "lastName": "West",
-    "avatar": "https://cdn.fakercloud.com/avatars/jennyyo_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user6"
   },
   {
     "id": "7",
     "firstName": "Yadira",
     "lastName": "Anderson",
-    "avatar": "https://cdn.fakercloud.com/avatars/ernestsemerda_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user7"
   },
   {
     "id": "8",
     "firstName": "Emil",
     "lastName": "Hermann",
-    "avatar": "https://cdn.fakercloud.com/avatars/iamglimy_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user8"
   },
   {
     "id": "9",
     "firstName": "Caden",
     "lastName": "Turcotte",
-    "avatar": "https://cdn.fakercloud.com/avatars/betraydan_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user9"
   },
   {
     "id": "10",
     "firstName": "Robert",
     "lastName": "Howe",
-    "avatar": "https://cdn.fakercloud.com/avatars/nomidesigns_128.jpg"
+    "avatar": "https://i.ibb.co/KKmgdDc/user.png",
+    "avatarBG": "user10"
   }
 ]

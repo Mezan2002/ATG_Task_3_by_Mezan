@@ -1,7 +1,8 @@
 [
   {
     "createdAt": "2021-12-17T07:09:25.106Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/laasli_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user1",
     "Bio": "Magni placeat laboriosam reiciendis in officiis non nihil placeat.",
     "jobTitle": "Dynamic Web Designer",
     "profile": {
@@ -14,7 +15,8 @@
   },
   {
     "createdAt": "2021-12-17T10:04:31.795Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/dgclegg_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user2",
     "Bio": "Est aut sed temporibus hic natus mollitia.",
     "jobTitle": "National Accountability Architect",
     "profile": {
@@ -27,7 +29,8 @@
   },
   {
     "createdAt": "2021-12-17T03:08:36.874Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/d00maz_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user3",
     "Bio": "Sit ipsa nihil ratione.",
     "jobTitle": "Regional Branding Orchestrator",
     "profile": {
@@ -40,7 +43,8 @@
   },
   {
     "createdAt": "2021-12-17T00:02:23.768Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/chatyrko_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user4",
     "Bio": "Voluptate quia tenetur iste iure minus accusamus dolorem.",
     "jobTitle": "International Paradigm Engineer",
     "profile": {
@@ -53,7 +57,8 @@
   },
   {
     "createdAt": "2021-12-17T10:50:38.375Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/kurtinc_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user5",
     "Bio": "Est sapiente id vel.",
     "jobTitle": "Legacy Interactions Coordinator",
     "profile": {
@@ -66,7 +71,8 @@
   },
   {
     "createdAt": "2021-12-16T13:57:08.429Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/jennyyo_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user6",
     "Bio": "Delectus neque dolore.",
     "jobTitle": "District Intranet Consultant",
     "profile": {
@@ -79,7 +85,8 @@
   },
   {
     "createdAt": "2021-12-16T22:34:32.148Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/ernestsemerda_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user7",
     "Bio": "Temporibus consequatur delectus ex nam repellat enim.",
     "jobTitle": "Regional Group Orchestrator",
     "profile": {
@@ -92,7 +99,8 @@
   },
   {
     "createdAt": "2021-12-17T12:22:42.766Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/iamglimy_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user8",
     "Bio": "Consectetur molestiae cum nulla voluptatem.",
     "jobTitle": "Legacy Security Producer",
     "profile": {
@@ -105,7 +113,8 @@
   },
   {
     "createdAt": "2021-12-16T14:20:48.288Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/betraydan_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user9",
     "Bio": "Voluptatem dolores tenetur neque in porro.",
     "jobTitle": "Product Accountability Director",
     "profile": {
@@ -118,7 +127,8 @@
   },
   {
     "createdAt": "2022-02-22T09:37:56.114Z",
-    "avatar": "https://cdn.fakercloud.com/avatars/nomidesigns_128.jpg",
+    "avatar": "https://i.ibb.co/4NRbNWZ/user-1.png",
+    "avatarBG": "user10",
     "Bio": "Consequatur explicabo officiis.",
     "jobTitle": "Central Communications Supervisor",
     "profile": {
