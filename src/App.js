@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import "./App.css";
+import Loading from "./Components/Loading/Loading";
 import UserDetails from "./Components/UserDetails/UserDetails";
 import UsersList from "./Components/UsersList/UsersList";
 
@@ -15,6 +16,10 @@ function App() {
     },
   });
 
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
+
   return (
     <div className="App my-3">
       <div className="container">
@@ -22,13 +27,15 @@ function App() {
           <div className="col-md-6">
             <UsersList setActiveUser={setActiveUser}></UsersList>
           </div>
-          <div className="col-md-6">
-            {userDetails && (
+          <div className="col-md-6 mainContainerUserDetails">
+            {userDetails ? (
               <UserDetails
                 userDetails={userDetails}
                 activeUser={activeUser}
                 isLoading={isLoading}
               ></UserDetails>
+            ) : (
+              <h2>No Data Found</h2>
             )}
           </div>
         </div>
