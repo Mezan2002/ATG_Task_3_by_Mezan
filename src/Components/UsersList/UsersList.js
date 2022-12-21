@@ -1,8 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import Card from "react-bootstrap/Card";
 import Loading from "../Loading/Loading";
+import "./UsersList.css";
 
-function UsersList() {
+function UsersList({ setActiveUser }) {
   const { data: usersList, isLoading } = useQuery({
     queryKey: ["usersList"],
     queryFn: async () => {
@@ -22,10 +23,11 @@ function UsersList() {
       <Card.Body>
         {usersList.map((user) => (
           <div
+            onClick={() => setActiveUser(user.id)}
             key={user.id}
-            className=" bg-dark text-white py-3 rounded-3 mb-2"
+            className="py-3 rounded-2 mb-2 usersListContainer"
           >
-            <div className="d-flex">
+            <div className="d-flex usersList">
               <img src={user.avatar} alt="" className="ms-3" />
               <h5 className="ms-3">{user.firstName + " " + user.lastName}</h5>
             </div>
