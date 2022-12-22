@@ -1,22 +1,21 @@
-import { useQuery } from "@tanstack/react-query";
 import Card from "react-bootstrap/Card";
 import Loading from "../Loading/Loading";
 import userImage from "../../assets/user.jpg";
 import "./UsersList.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function UsersList({ setActiveUser }) {
-  const { data: usersList, isLoading } = useQuery({
-    queryKey: ["usersList"],
-    queryFn: async () => {
-      const res = await fetch(
-        "https://602e7c2c4410730017c50b9d.mockapi.io/users"
-      );
-      const data = await res.json();
-      return data;
-    },
-  });
-
-  console.log(usersList);
+  const [isLoading, setIsLoading] = useState(true);
+  const [usersList, setUsersList] = useState();
+  useEffect(() => {
+    axios
+      .get(`https://602e7c2c4410730017c50b9d.mockapi.io/users`)
+      .then((data) => {
+        setUsersList(data.data);
+        setIsLoading(false);
+      });
+  }, []);
 
   if (isLoading) {
     return <Loading></Loading>;
