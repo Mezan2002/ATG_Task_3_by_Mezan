@@ -35,7 +35,7 @@ function UsersList({ setActiveUser }) {
             <div className="d-flex align-items-center usersList py-3">
               <div
                 className={`usersIcon rounded-circle ms-3 d-flex align-items-center 
-                justify-content-center ${user.avatarBG}`}
+                justify-content-center`}
               >
                 <img src={userImage} alt="" className="w-50 avatar" />
               </div>
