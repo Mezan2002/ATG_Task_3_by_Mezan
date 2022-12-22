@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Loading from "./Components/Loading/Loading";
 import UserDetails from "./Components/UserDetails/UserDetails";
@@ -7,16 +7,16 @@ import UsersList from "./Components/UsersList/UsersList";
 
 function App() {
   const [activeUser, setActiveUser] = useState("1");
-  const { data: userDetails, isLoading } = useQuery({
-    queryKey: ["userDetails"],
-    queryFn: async () => {
-      const res = await fetch(
-        "https://602e7c2c4410730017c50b9d.mockapi.io/users"
-      );
-      const data = await res.json();
-      return data;
-    },
-  });
+  const [isLoading, setIsLoading] = useState(true);
+  const [userDetails, setUserDetails] = useState();
+  useEffect(() => {
+    axios
+      .get(`https://602e7c2c4410730017c50b9d.mockapi.io/users`)
+      .then((data) => {
+        setUserDetails(data.data);
+        setIsLoading(false);
+      });
+  }, []);
 
   if (isLoading) {
     return <Loading></Loading>;
