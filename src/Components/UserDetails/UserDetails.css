@@ -9,6 +9,8 @@
 }
 .detailsAvatar {
   margin-left: 24px;
+  width: 100%;
+  border-radius: 50%;
 }
 .userBio {
   background-color: rgb(216, 216, 216) s;

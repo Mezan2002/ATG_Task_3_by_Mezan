@@ -1,6 +1,7 @@
 import { FloatingLabel, Form } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Loading from "../Loading/Loading";
+import userImage from "../../assets/user.jpg";
 import "./UserDetails.css";
 
 function UserDetails({ activeUser, userDetails, isLoading }) {
@@ -18,9 +19,9 @@ function UserDetails({ activeUser, userDetails, isLoading }) {
           <div key={activeUser.id}>
             <div
               className={`usersDetailsIcon rounded-circle d-flex align-items-center 
-              justify-content-center ${activeUser.avatarBG}`}
+              justify-content-center`}
             >
-              <img src={activeUser.avatar} alt="" className="detailsAvatar" />
+              <img src={userImage} alt="" className="detailsAvatar" />
             </div>
             <p className="userName mt-2 mb-5">@{activeUser.profile.username}</p>
             <Form.Group

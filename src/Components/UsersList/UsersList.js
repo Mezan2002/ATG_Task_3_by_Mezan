@@ -1,17 +1,22 @@
 import { useQuery } from "@tanstack/react-query";
 import Card from "react-bootstrap/Card";
 import Loading from "../Loading/Loading";
+import userImage from "../../assets/user.jpg";
 import "./UsersList.css";
 
 function UsersList({ setActiveUser }) {
   const { data: usersList, isLoading } = useQuery({
     queryKey: ["usersList"],
     queryFn: async () => {
-      const res = await fetch("usersList.json");
+      const res = await fetch(
+        "https://602e7c2c4410730017c50b9d.mockapi.io/users"
+      );
       const data = await res.json();
       return data;
     },
   });
+
+  console.log(usersList);
 
   if (isLoading) {
     return <Loading></Loading>;
@@ -32,10 +37,10 @@ function UsersList({ setActiveUser }) {
                 className={`usersIcon rounded-circle ms-3 d-flex align-items-center 
                 justify-content-center ${user.avatarBG}`}
               >
-                <img src={user.avatar} alt="" className="w-50 avatar" />
+                <img src={userImage} alt="" className="w-50 avatar" />
               </div>
               <p className="ms-3 mb-0 listOfUserName">
-                {user.firstName + " " + user.lastName}
+                {user.profile.firstName + " " + user.profile.lastName}
               </p>
             </div>
           </div>
